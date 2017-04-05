@@ -35,67 +35,71 @@
 
 	<div class="wrapper">
 		<div class="jumbotron">
-			<h1><img>  Train Schedule</h1>
+			<h1>Train Schedule</h1>
 
 		</div>
 
-		<div class="panel panel-warning">
-			<div class="panel-heading">
-				<h2 class="panel-title">Current Train Schedule</h2>
+		<div class="block">
+			<div class="panel panel-success">
+				<div class="panel-heading">
+					<h2 class="panel-title">Current Train Schedule</h2>
+				</div>
+				<div class="panel-body">
+					<table class="table" id="trainTable">
+						<tbody>
+							<thead>
+								<tr>
+									<th>Train Name</th>
+									<th>Destination</th>
+									<th>Frequency</th>
+									<th>Next Arrival</th>
+									<th>Arriving</th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
-			<div class="panel-body">
-				<table class="table" id="trainTable">
-					<tbody>
-						<thead>
-							<tr>
-								<th>Train Name</th>
-								<th>Destination</th>
-								<th>Frequency</th>
-								<th>Next Arrival</th>
-								<th>Arriving Soon</th>
-							</tr>
-					</tbody>
-				</table>
+
+			<div class="block">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h2 class="panel-title">Add Train</h2>
+					</div>
+					<div class="panel-body">
+						<form>
+							<div class="form-group">
+								<label for="trnName">Train Name</label>
+								<input type="name" class="form-control" id="trnName" placeholder="Train Name">
+							</div>
+							<div class="form-group">
+								<label for="trnDest">Destination</label>
+								<input type="text" class="form-control" id="trnDest" placeholder="Destination">
+							</div>
+							<div class="form-group">
+								<label for="firstTrn">First Train Time (am or pm)</label>
+								<input type="time" class="form-control" id="firstTrn" placeholder="First Train Time">
+							</div>
+							<div class="form-group">
+								<label for="trnFreq">Frequency (min)</label>
+								<input type="number" class="form-control" id="trnFreq" placeholder="Frequency">
+							</div>
+
+							<button  type="submit" class="btn btn-warning" id = "trnSubmit">Submit</button>
+						</form>
+
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<div class="panel panel-warning">
-			<div class="panel-heading">
-				<h2 class="panel-title">Add Train</h2>
-			</div>
-			<div class="panel-body">
-				<form>
-					<div class="form-group">
-						<label for="trnName">Train Name</label>
-						<input type="name" class="form-control" id="trnName" placeholder="Train Name">
-					</div>
-					<div class="form-group">
-						<label for="trnDest">Destination</label>
-						<input type="text" class="form-control" id="trnDest" placeholder="Destination">
-					</div>
-					<div class="form-group">
-						<label for="firstTrn">First Train Time (am or pm)</label>
-						<input type="time" class="form-control" id="firstTrn" placeholder="First Train Time">
-					</div>
-					<div class="form-group">
-						<label for="trnFreq">Frequency (min)</label>
-						<input type="number" class="form-control" id="trnFreq" placeholder="Frequency">
-					</div>
+		<!-- Link to firebase -->
+		<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 
-					<button  type="submit" class="btn btn-warning" id = "trnSubmit">Submit</button>
-				</form>
+		<!-- Link to javascript sheet -->
+		<script type="text/javascript" src ="assets/javascript/app.js"></script>
 
-			</div>
-		</div>
-	</div>
+		
 
-	<!-- Link to firebase -->
-	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
-
-	<!-- Link to javascript sheet -->
-	<script type="text/javascript" src ="assets/javascript/app.js"></script>
-
-	
-
-</body>
-</html>
+	</body>
+	</html>

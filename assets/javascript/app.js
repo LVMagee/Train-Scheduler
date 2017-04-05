@@ -93,7 +93,7 @@ $(document).ready(function () {
 
 
 		// Puts text into table
-		$("#trainTable > tbody").append("<tr><td>" + trnName + "</td><td>" + trnDest + "</td><td>" + "Every " + trainFreq + " minutes" + "</td><td>" + trnArrival + "</td><td>" + "In " + minAway + " minutes" + "</td></tr>");
+		$("#trainTable > tbody").append("<tr><td>" + trnName + "</td><td>" + trnDest + "</td><td>" + "Every " + trainFreq + " min." + "</td><td>" + trnArrival + "</td><td>" + "In " + minAway + " min." + "</td></tr>");
 
 	});
 	});

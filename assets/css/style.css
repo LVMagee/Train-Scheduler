@@ -17,10 +17,25 @@ body {
 	text-shadow: 3px 2px grey;
 	background-image: url("../images/green.png");
 	border-radius: 8px;
+	border-style: solid; color: #87531B; 
+}
+
+.block {
+	border-style: solid; color: #87531B; 
 }
 
 .panel-body{
 	background-image: url("../images/green.png");
+	border-style: solid; color: #87531B; 
+}
+
+.panel-title{
+	font-size: 18px;
+	color: #87531B;
+}
+
+label {
+	font-size: 16px;
 }
 
 table {
