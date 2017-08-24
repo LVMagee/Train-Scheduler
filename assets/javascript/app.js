@@ -1,6 +1,7 @@
+
 $(document).ready(function () {
 
-	 // Initialize Firebase
+	 // // Initialize Firebase
 	 var config = {
 	 	apiKey: "AIzaSyCQdCttZBDJvOv9_tguHxJ3DE6L4jAZXvE",
 	 	authDomain: "lvmtest-83520.firebaseapp.com",
@@ -11,8 +12,11 @@ $(document).ready(function () {
 
 	 firebase.initializeApp(config);
 
-	  // Create a variable to reference the database.
+	 // // //  // Create a variable to reference the database.
 	  var database = firebase.database();
+
+	  
+	  // var database = new firebase("https://lvm-trainshed.firebaseio.com/");
 
 	  // Capture Button Click for Submit
 	  $("#trnSubmit").on("click", function() {
